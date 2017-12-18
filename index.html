@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--[if IE 9]>  <html class="ie" lang="en"> <![endif]-->
+<html lang="en">
+<head>
+    <!-- Created by Igor Linnyk, 2017-12-17 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Hamburger Menu</title>
+</head>
+<body>
+    <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+        <symbol id="icon-search" viewBox="0 0 30 32">
+        <title>search</title>
+        <path d="M30 26l-7.785-7.785c1.111-1.814 1.785-3.929 1.785-6.215 0-6.626-5.375-12-12-12s-12 5.374-12 12c0 6.625 5.374 12 12 12 2.286 0 4.4-0.674 6.215-1.781l7.785 7.781c0.547 0.547 1.453 0.543 2 0l2-2c0.547-0.547 0.547-1.453 0-2zM12 20c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z"></path>
+        </symbol>
+        <symbol id="icon-home" viewBox="0 0 32 32">
+        <title>home</title>
+        <path d="M32 18.451l-16-12.42-16 12.42v-5.064l16-12.42 16 12.42zM28 18v12h-8v-8h-8v8h-8v-12l12-9z"></path>
+        </symbol>
+        <symbol id="icon-cart" viewBox="0 0 32 32">
+        <title>cart</title>
+        <path d="M12 29c0 1.657-1.343 3-3 3s-3-1.343-3-3c0-1.657 1.343-3 3-3s3 1.343 3 3z"></path>
+        <path d="M32 29c0 1.657-1.343 3-3 3s-3-1.343-3-3c0-1.657 1.343-3 3-3s3 1.343 3 3z"></path>
+        <path d="M32 16v-12h-24c0-1.105-0.895-2-2-2h-6v2h4l1.502 12.877c-0.915 0.733-1.502 1.859-1.502 3.123 0 2.209 1.791 4 4 4h24v-2h-24c-1.105 0-2-0.895-2-2 0-0.007 0-0.014 0-0.020l26-3.98z"></path>
+        </symbol>
+        <symbol id="icon-calendar" viewBox="0 0 32 32">
+        <title>calendar</title>
+        <path d="M10 12h4v4h-4zM16 12h4v4h-4zM22 12h4v4h-4zM4 24h4v4h-4zM10 24h4v4h-4zM16 24h4v4h-4zM10 18h4v4h-4zM16 18h4v4h-4zM22 18h4v4h-4zM4 18h4v4h-4zM26 0v2h-4v-2h-14v2h-4v-2h-4v32h30v-32h-4zM28 30h-26v-22h26v22z"></path>
+        </symbol>
+        <symbol id="icon-user" viewBox="0 0 32 32">
+        <title>user</title>
+        <path d="M18 22.082v-1.649c2.203-1.241 4-4.337 4-7.432 0-4.971 0-9-6-9s-6 4.029-6 9c0 3.096 1.797 6.191 4 7.432v1.649c-6.784 0.555-12 3.888-12 7.918h28c0-4.030-5.216-7.364-12-7.918z"></path>
+        </symbol>
+        </defs>
+    </svg>
+    <script>if (!!navigator.userAgent.match(/(?:\b(MS)?IE\s+|\bTrident\/7\.0;.*\s+rv:)(\d+)/)){document.body.className += 'ie';}</script>
+    <header class="grid-layout">
+        <div class="nav-wrapper">
+            <input class="burger-checkbox" id="burger-checkbox" type="checkbox">
+            <label for="burger-checkbox" class="burger-icon">  
+            </label>
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li>
+                        <a href="#Dashboard"><svg class="icon icon-home"><use xlink:href="#icon-home"></use></svg>Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="#Menu2"><svg class="icon icon-calendar"><use xlink:href="#icon-calendar"></use></svg>Menu2</a>
+                    </li>
+                    <li>
+                        <a href="#Menu3"><svg class="icon icon-user"><use xlink:href="#icon-user"></use></svg>Menu3</a>
+                    </li>
+                    <li>
+                        <a href="#Menu4"><svg class="icon icon-cart"><use xlink:href="#icon-cart"></use></svg>Menu4</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-title pad-left">
+            <h3>Test Task - Menu</h2>
+        </div>
+        <div class="header-sub pad-left">
+            <h4>Dashboard</h3>
+        </div>
+        <div class="search-bar pad-left">
+            <svg class="icon icon-search"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-search"></use></svg>
+            <input type="search" name="" id="search" placeholder="Search...">
+        </div>
+    </header>
+    <main>        
+        <section>
+            <article></article>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>
